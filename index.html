@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div>
+      <label
+        >Add product:
+        <input type="text" id="product-name" placeholder="Product Name" />
+        <input
+          type="text"
+          id="product-quantity"
+          placeholder="Product quantity"
+        />
+        <input type="text" id="product-type" placeholder="Product Type" />
+      </label>
+      <button class="button-styles" id="Add-product">Add product</button>
+    </div>
+    <br />
+    <div>
+      <label
+        >Update product quantity:
+        <select id="select-product" placeholder="Select Product">
+          <option value="" id="hidden" selected disabled hidden
+            >Choose here</option
+          >
+        </select>
+        <input type="text" id="new-quanitity" placeholder="New quantity" />
+      </label>
+      <button class="button-styles" id="edit-quantity">Edit quantity</button>
+    </div>
+    <br />
+
+    <div>
+      <label
+        >Delete product:
+        <select id="select-delete-product" placeholder="Select Product">
+          <option value="" selected disabled hidden>Choose here</option>
+        </select>
+      </label>
+      <button class="button-styles" id="delete-product">Delete product</button>
+      <button class="button-styles" id="undo">Cancel</button>
+    </div>
+    <div>
+      <h1>Products:</h1>
+      <ul id="container"></ul>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
