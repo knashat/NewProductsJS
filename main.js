@@ -41,7 +41,7 @@ deleteBtn.addEventListener("click", function(myEvent) {
 
   if (products[0] !== undefined) {
     const productName = selectFeild2.value;
-    deleteBtn.innerHTML = "Click Cancel to undo in 10 seconds!";
+    deleteBtn.innerHTML = "Click Cancel to undo in 5 seconds!";
     let deleteProduct;
     for (let i = 0; i < products.length; i++) {
       if (productName === products[i].name) {
@@ -62,7 +62,7 @@ deleteBtn.addEventListener("click", function(myEvent) {
       inputFeild3.value = "";
       selectFeild1.value = "";
       selectFeild2.value = "";
-    }, 10000);
+    }, 5000);
   }
 });
 
@@ -83,8 +83,7 @@ cancelBtn.addEventListener("click", function(myEvent) {
 
 const renderProducts = () => {
   container.innerHTML = "";
-  selectFeild1.innerHTML = "";
-  selectFeild2.innerHTML = "";
+
   products.forEach(product => {
     const listProduct = document.createElement("li");
     const selectProduct = document.createElement("option");
